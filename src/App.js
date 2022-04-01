@@ -15,6 +15,7 @@ function App() {
       .then((res) => res.json())
       .then(data => {
         setMovies(data.results);
+        console.log(data)
       })
   }, []);
 
@@ -26,7 +27,6 @@ function App() {
         .then((res) => res.json())
         .then(data => {
           setMovies(data.results);
-          console.log(data);
         })
       }
   }
